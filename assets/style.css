@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,300;0,700;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #000000;
+    --secondary-color: #fac564;
+    --p-color: rgba(255, 255, 255, 0.7);    
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font:'Nothing You Could Do', cursive;
+}
+
+body{
+    background-image: url(./images/about-text-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+hgroup{
+    padding-top: 70px;
+    text-align: center;
+}
+
+hgroup h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+hgroup h4{
+    width: 500px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #000000;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px;
+}
+
+header .container .logo img{
+    height: 80px;
+    margin-left: 30px;
+}
+
+header .container nav {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+header .container nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header .container nav ul li a{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);    
+}
+
+header .container nav ul li a.active{
+    color: #fac564;
+}
+
+header .container nav ul li a:hover {
+    color: #fac564;
+}
+
+main{
+    background-image: url(./images/bg_1.jpg);
+    height: calc(100vh - 80px);
+}
+
+main .container .top-main{
+    width: 500px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+main .container .top-main h3{
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-size: 30px;
+}
+
+main .container .top-main h1{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 44px;
+    text-align: center;
+}
+
+main .container .top-main p{
+    text-align: center;
+    color: var(--p-color);
+    margin-top: 20px;
+}
+
+main .container .top-main .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+main .container .top-main button {
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+main .container .top-main button:hover{
+    background-color: var(--secondary-color);
+    border: 0;
+}
+
+main .container .top-main button a{
+    color: white;
+}
+
+main .container .top-main button a:hover{
+    color: black;
+}
+
+section#information .container{
+    display: flex;
+}
+
+section#information .container .cards{
+    width: 65%;
+    display: flex;
+    gap: 20px;
+    padding: 20px 0 20px 180px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+section#information .container .cards .card{
+    display: flex;
+    gap: 15px;
+}
+
+section#information .container .cards .cardnerator .icon i{
+    color: var(--secondary-color);
+}
+
+section#information .container .cards .card .infos span{
+    font-size: 16px;
+}
+
+section#information .container .cards .card .infos p{
+    font-size: 14px;
+    color: var(--p-color);
+    margin-top: 15px;
+}
+
+section#information .container .media{
+    width: 35%;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    padding-left: 40px;   
+}
+
+section#information .container .media i{
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+section#about .container-full-width{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+}
+
+section#about .container-full-width .about-image img{
+    width: 100%;
+}
+
+section#about .container-full-width .about-text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+}
+
+section#about .container-full-width .about-text h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+section#about .container-full-width .about-text p{
+    font-size: 18px;
+    color: var(--p-color);
+}
+
+section#services {
+    background-image: url(./images/services-bg.png);
+}
+
+
+
+section#services .container .services{
+    display: flex;
+    gap: 50px;
+    padding: 70px;
+}
+
+.services .service .service-icon {
+    width: 80px;
+    height: 80px;
+    border: 1.5px solid rgb(95, 93, 93);
+    margin: 0 auto;
+    transition: all ease .4s;
+}
+
+.services .service .service-icon:hover {
+    transform: rotate(45deg);
+    background-color: var(--secondary-color);
+}
+
+.services .service .service-icon i{
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.services .service .service-text h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.services .service .service-text p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+section#hot-meals hgroup{
+    margin-bottom: 100px;
+}
+
+section#hot-meals hgroup h2 {
+    color: whitesmoke;
+}
+
+section#hot-meals hgroup h4{
+    color: var(--p-color);
+}
+
+.hot-meals{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.hot-meals .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.hot-meals .text{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+}
+
+.hot-meals .text h2{
+    color: whitesmoke;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hot-meals .text p{
+    color: var(--p-color);
+    margin-bottom: 20px;
+}
+
+.hot-meals .text span{
+    color: var(--secondary-color);
+}
+
+.hot-meals .text button{
+    padding: 7px 10px;
+    border: 1.5px solid rgb(185, 175, 175);
+    background-color: transparent;
+    color: white;
+    margin-left: 20px;
+}
+
+
+
+section#pricing hgroup h2{
+    color: whitesmoke;
+}
+
+section#pricing hgroup .decoration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    bottom: 25px;
+}
+
+section#pricing hgroup .decoration span.line{
+    width: 70px;
+    height: 2px;
+    border-top: 1px solid var(--secondary-color);
+}
+
+section#pricing hgroup .decoration div.small-cube{
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary-color);
+    transform: rotate(45deg);
+}
+
+section#pricing hgroup .decoration div.cube{
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+    transform: rotate(45deg);
+}
+
+section#pricing hgroup  h4{
+    color: var(--p-color);
+}
+
+section#pricing .prices{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 100px 100px 200px 100px;
+}
+
+section#pricing .article-price{
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+section#pricing .article-price .article-text{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+section#pricing .article-price .article-text .line{
+    width: 250px;
+    border-top: 1px dotted var(--secondary-color);
+    margin-top: 18px;
+}
+
+section#pricing .article-price .article-text .dollar{
+    color: var(--secondary-color);
+}
+
+section#pricing .article-price .article-text p{
+    position: relative;
+    bottom: 10px;
+    color: var(--p-color);
+}
+
+section#gallery .gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+section#gallery .gallery img{
+    width: 100%;
+}
+
+section#sales {
+    background-image: url(./images/bg_2.jpg);
+}
+
+section#sales .container {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+section#sales .sales{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 100px 0;
+    color: white;
+}
+
+section#sales .sales .sale .icon {
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--secondary-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+section#sales .sales .sale .icon i{
+    font-size: 48px;
+    color: var(--secondary-color);
+}
+
+section#sales .sales .sale span{
+    color: var(--secondary-color);
+    font-size: 28px;
+    width: 30px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+section#sales .sales .sale p{
+    text-align: center;
+    margin-top: 30px;
+}
+
+section#blog hgroup{
+    margin-bottom: 100px;
+}
+
+section#blog hgroup h2{
+    color: rgb(221, 221, 221);
+}
+
+section#blog hgroup h4{
+    color: var(--p-color);
+}
+
+section#blog .blog{
+    display: flex;
+    width: 1;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+section#blog .blog .blog-items {
+    width: 320px;
+}
+
+section#blog .blog .blog-items img{
+    height: 280px;
+}
+
+section#blog .blog .blog-items h3{
+    color: var(--p-color);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+section#blog .blog .blog-items h4{
+    color: rgb(209, 200, 200);
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+section#blog .blog .blog-items p{
+    color: var(--p-color);
+    margin-top: 30px;
+}
+
+section#contact {
+    
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+
+section#contact .contact-form form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+section#contact .contact-form form input,
+section#contact .contact-form form textarea{
+    background-color: transparent;
+    border-bottom: 1px solid var(--p-color);
+    width: 500px;
+}
+
+section#contact .contact-form form h3{
+    margin-top: 50px;
+    font-size: 28px;
+    color: var(--p-color);
+}
+
+section#contact .contact-form form button{
+    width: 100px;
+    height: 50px;
+    background-color: var(--secondary-color);
+}
+
+footer{
+    color: white;
+    background-color: black;
+    padding: 60px;
+    text-align: center;
+}
+
