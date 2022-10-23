@@ -213,6 +213,14 @@ section#about .container-full-width .about-text h1{
     font-weight: 400;
 }
 
+section#about .container-full-width .about-text h1 .icon i{
+    color: var(--secondary-color);
+}
+
+section#about .container-full-width .about-text h1 .pizza{
+    color: var(--secondary-color);
+}
+
 section#about .container-full-width .about-text p{
     font-size: 18px;
     color: var(--p-color);
@@ -532,4 +540,189 @@ footer{
     padding: 60px;
     text-align: center;
 }
+
+@media (max-width: 400px){
+    header .container{
+        width: 100%;
+    }
+
+    header .container nav{
+        display: none;
+    }
+
+    main {
+        height: 680px;
+    }
+    main .container .top-main{
+        width: 300px;
+        padding-top: 150px;
+    } 
+
+    main .container .top-main h1{
+        font-size: 22px;
+    }
+
+    section#information {
+        width: 100%;
+    }
+
+    section#information .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#information .container .cards{
+        width: 100%;
+        display: block;
+        padding-left: 30px;
+    }
+
+    section#information .container .media{
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    section#about{
+        width: 100%;
+        background-image: url(./images/about-text-bg.jpg);
+    }
+
+    section#about .container-full-width{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#about .container-full-width .about-image img{
+        width: 100%;
+    }
+
+    section#about .container-full-width .about-text{
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    section#services .container{
+        width: 90%;
+    }
+
+    hgroup{
+        width: 350px;
+        margin-left: 20px;
+    }
+
+    hgroup h4{
+        width: 350px;
+    }
+
+    section#services .container .services{
+        display: block;
+    }
+
+    section#services .container .services .service .service-icon{
+        margin-top: 20px ;
+    }
+
+    section#hot-meals{
+        width: 100%;
+        background-image: url(./images/about-text-bg.jpg);
+    }
+
+    section#hot-meals .container-full-width .hot-meals{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section#pricing{
+        width: 100%;
+        background-image: url(./images/about-text-bg.jpg);
+    }
+
+    section#pricing .pricing .prices{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-left: 10px;
+        padding-bottom: 100px;
+    }
+
+    section#pricing .pricing .prices .article-price .article-text .line{
+        width: 125px;
+    }
+
+    section#gallery .container-full-width .gallery{
+        display: block;
+    }
+    
+    section#gallery .container-full-width .gallery img{
+        height: 100%;
+    }
+
+    section#sales{
+        width: 100%;
+    }
+
+    section#sales .container .sales{
+        width: 200px;
+        display: block;
+    }
+
+    section#sales .container .sales .sale{
+        padding-top: 20px;
+    }
+    
+    section#sales .container .sales .sale .icon{
+        margin-left: 50px;
+    } 
+
+    section#sales .container .sales .sale span{
+        position: relative;
+        bottom: 20px;
+    }
+
+    section#sales .container .sales .sale p{
+        position: relative;
+        bottom: 50px;
+    }
+
+    section#blog{
+        width: 100%;
+        
+        background-image: url(./images/about-text-bg.jpg);
+    }
+    
+    section#blog .blog{
+        display: block;
+    }
+
+    section#blog .blog .blog-items{
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+
+    section#contact{
+        width: 100%;
+        display: block;
+    }
+
+    
+    section#contact iframe{
+        width: 100%;
+    }
+
+    section#contact .contact-form form{
+        width: 90%;
+    }
+
+    section#contact .contact-form form input,
+    section#contact .contact-form form 
+    {
+        width: 100%;
+    }
+}
+
+
+
 
