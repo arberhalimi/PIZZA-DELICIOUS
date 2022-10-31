@@ -729,7 +729,7 @@ footer{
 
     header .container .logo{
         margin: 0 auto;
-        padding-right: 70px;
+        padding-right: 100px;
     }
 
     header .container nav{
@@ -829,24 +829,16 @@ footer{
         background-image: url(./images/about-text-bg.jpg);
     }
 
-    section#pricing .pricing{
-    }
-
     section#pricing .pricing .prices{
         display: flex;
         flex-direction: column;
         margin: 0;
-        padding-left: 30px;
+        padding-left: 10px;
         padding-bottom: 100px;
     }
 
-    section#pricing .pricing .prices .article-price .article-text .line{
-        width: 190px;
-    }
 
-    section#pricing .pricing .prices .article-price .article-text p{
-        width: 350px;
-    }
+
 
     section#gallery .container-full-width .gallery{
         display: block;
@@ -892,7 +884,7 @@ footer{
     section#blog .blog{
         display: block;
         width: 300px;
-        margin: 0 auto;
+        margin-left: 10px;
     }
 
     section#blog .blog .blog-items{
